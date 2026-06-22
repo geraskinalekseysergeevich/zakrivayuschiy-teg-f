@@ -55,45 +55,32 @@
               <button class="card__icon-button button" type="button" aria-label="Лайк">
                 <svg
                   class="like-icon"
-                  viewBox="0 0 36 36"
+                  viewBox="0 0 39 36"
                   aria-hidden="true"
                   focusable="false"
                 >
-                  <path
-                    class="contour"
-                    d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z"
-                    fill="currentColor"
-                  />
-                  <path
-                    class="main-body"
-                    d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z"
-                    fill="currentColor"
-                  />
-                  <path
-                    class="core"
-                    d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z"
-                    fill="currentColor"
-                  />
-                  <path
-                    class="sparks"
-                    d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5"
-                    stroke="currentColor"
-                    stroke-linecap="square"
-                  />
                   <g class="heart">
                     <path
                       class="contour"
-                      d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z"
+                      d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                      fill="var(--contour-color)"
                     />
                     <path
                       class="main-body"
-                      d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z"
+                      d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                      fill="transparent"
                     />
                     <path
                       class="core"
-                      d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z"
+                      d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                      fill="transparent"
                     />
                   </g>
+                  <path
+                    class="sparks"
+                    d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                    fill="var(--animation-fill-color)"
+                  />
                 </svg>
               </button>
               <button class="button card__like-button" type="button">
@@ -128,17 +115,37 @@
             </div>
             <div class="card__actions">
               <button class="card__icon-button button" type="button" aria-label="Лайк">
-                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
-                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
-                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
-                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
-                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                                                <svg
+                  class="like-icon"
+                  viewBox="0 0 39 36"
+                  aria-hidden="true"
+                  focusable="false"
+                >
                   <g class="heart">
-                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
-                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
-                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                    <path
+                      class="contour"
+                      d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                      fill="var(--contour-color)"
+                    />
+                    <path
+                      class="main-body"
+                      d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                      fill="transparent"
+                    />
+                    <path
+                      class="core"
+                      d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                      fill="transparent"
+                    />
                   </g>
+                  <path
+                    class="sparks"
+                    d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                    fill="var(--animation-fill-color)"
+                  />
                 </svg>
+
+
               </button>
               <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
@@ -172,17 +179,37 @@
             </div>
             <div class="card__actions">
               <button class="card__icon-button button" type="button" aria-label="Лайк">
-                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
-                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
-                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
-                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
-                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                                                <svg
+                  class="like-icon"
+                  viewBox="0 0 39 36"
+                  aria-hidden="true"
+                  focusable="false"
+                >
                   <g class="heart">
-                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
-                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
-                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                    <path
+                      class="contour"
+                      d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                      fill="var(--contour-color)"
+                    />
+                    <path
+                      class="main-body"
+                      d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                      fill="transparent"
+                    />
+                    <path
+                      class="core"
+                      d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                      fill="transparent"
+                    />
                   </g>
+                  <path
+                    class="sparks"
+                    d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                    fill="var(--animation-fill-color)"
+                  />
                 </svg>
+
+
               </button>
               <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
@@ -217,17 +244,37 @@
             </div>
             <div class="card__actions">
               <button class="card__icon-button button" type="button" aria-label="Лайк">
-                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
-                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
-                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
-                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
-                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                                                <svg
+                  class="like-icon"
+                  viewBox="0 0 39 36"
+                  aria-hidden="true"
+                  focusable="false"
+                >
                   <g class="heart">
-                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
-                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
-                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                    <path
+                      class="contour"
+                      d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                      fill="var(--contour-color)"
+                    />
+                    <path
+                      class="main-body"
+                      d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                      fill="transparent"
+                    />
+                    <path
+                      class="core"
+                      d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                      fill="transparent"
+                    />
                   </g>
+                  <path
+                    class="sparks"
+                    d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                    fill="var(--animation-fill-color)"
+                  />
                 </svg>
+
+
               </button>
               <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
@@ -262,17 +309,37 @@
             </div>
             <div class="card__actions">
               <button class="card__icon-button button" type="button" aria-label="Лайк">
-                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
-                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
-                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
-                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
-                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                                                <svg
+                  class="like-icon"
+                  viewBox="0 0 39 36"
+                  aria-hidden="true"
+                  focusable="false"
+                >
                   <g class="heart">
-                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
-                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
-                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                    <path
+                      class="contour"
+                      d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                      fill="var(--contour-color)"
+                    />
+                    <path
+                      class="main-body"
+                      d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                      fill="transparent"
+                    />
+                    <path
+                      class="core"
+                      d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                      fill="transparent"
+                    />
                   </g>
+                  <path
+                    class="sparks"
+                    d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                    fill="var(--animation-fill-color)"
+                  />
                 </svg>
+
+
               </button>
               <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
@@ -307,17 +374,37 @@
             </div>
             <div class="card__actions">
               <button class="card__icon-button button" type="button" aria-label="Лайк">
-                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
-                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
-                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
-                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
-                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                                                <svg
+                  class="like-icon"
+                  viewBox="0 0 39 36"
+                  aria-hidden="true"
+                  focusable="false"
+                >
                   <g class="heart">
-                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
-                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
-                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                    <path
+                      class="contour"
+                      d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                      fill="var(--contour-color)"
+                    />
+                    <path
+                      class="main-body"
+                      d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                      fill="transparent"
+                    />
+                    <path
+                      class="core"
+                      d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                      fill="transparent"
+                    />
                   </g>
+                  <path
+                    class="sparks"
+                    d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                    fill="var(--animation-fill-color)"
+                  />
                 </svg>
+
+
               </button>
               <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
@@ -352,17 +439,37 @@
             </div>
             <div class="card__actions">
               <button class="card__icon-button button" type="button" aria-label="Лайк">
-                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
-                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
-                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
-                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
-                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                                                <svg
+                  class="like-icon"
+                  viewBox="0 0 39 36"
+                  aria-hidden="true"
+                  focusable="false"
+                >
                   <g class="heart">
-                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
-                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
-                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                    <path
+                      class="contour"
+                      d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                      fill="var(--contour-color)"
+                    />
+                    <path
+                      class="main-body"
+                      d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                      fill="transparent"
+                    />
+                    <path
+                      class="core"
+                      d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                      fill="transparent"
+                    />
                   </g>
+                  <path
+                    class="sparks"
+                    d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                    fill="var(--animation-fill-color)"
+                  />
                 </svg>
+
+
               </button>
               <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
@@ -397,17 +504,37 @@
             </div>
             <div class="card__actions">
               <button class="card__icon-button button" type="button" aria-label="Лайк">
-                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
-                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
-                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
-                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
-                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                                                <svg
+                  class="like-icon"
+                  viewBox="0 0 39 36"
+                  aria-hidden="true"
+                  focusable="false"
+                >
                   <g class="heart">
-                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
-                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
-                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                    <path
+                      class="contour"
+                      d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                      fill="var(--contour-color)"
+                    />
+                    <path
+                      class="main-body"
+                      d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                      fill="transparent"
+                    />
+                    <path
+                      class="core"
+                      d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                      fill="transparent"
+                    />
                   </g>
+                  <path
+                    class="sparks"
+                    d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                    fill="var(--animation-fill-color)"
+                  />
                 </svg>
+
+
               </button>
               <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
