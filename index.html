@@ -9,10 +9,432 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="#main" aria-label="Перейти к основному содержимому">
+          &lt;HTML&gt;
+        </a>
+        <h1 class="header__title">Закрывающий тег</h1>
+      </div>
+    </header>
+    <main class="content" id="main">
+      <section class="container cards" aria-label="Карточки">
+        <article class="card">
+          <div class="card__image-wrapper">
+            <picture class="card__picture">
+              <source
+                media="(width <= 375px)"
+                srcset="./images/card-01-mobile.png"
+              />
+              <img
+                class="card__image card__image_filter-01"
+                src="./images/card-01.png"
+                alt="Ночной кемпер под звездным небом"
+                loading="lazy"
+              />
+            </picture>
+            <p class="card__label">Ночь</p>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+            <div class="card__content">
+              <p class="card__text">
+                Это было самое начало пути. На этом этапе важно было проникнуться
+                атмосферой и собрать первые впечатления.
+              </p>
+              <p class="card__text">
+                Здесь я впервые почувствовал, как курс выстраивает систему и темп.
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button button" type="button" aria-label="Лайк">
+                <svg
+                  class="like-icon"
+                  viewBox="0 0 36 36"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    class="contour"
+                    d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    class="main-body"
+                    d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    class="core"
+                    d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    class="sparks"
+                    d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5"
+                    stroke="currentColor"
+                    stroke-linecap="square"
+                  />
+                  <g class="heart">
+                    <path
+                      class="contour"
+                      d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z"
+                    />
+                    <path
+                      class="main-body"
+                      d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z"
+                    />
+                    <path
+                      class="core"
+                      d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z"
+                    />
+                  </g>
+                </svg>
+              </button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image-wrapper">
+            <picture class="card__picture">
+              <source media="(width <= 375px)" srcset="./images/card-02-mobile.png" />
+              <img
+                class="card__image card__image_filter-02"
+                src="./images/card-02.png"
+                alt="Ночной кемпер в мягком приглушенном свете"
+                loading="lazy"
+              />
+            </picture>
+            <p class="card__label">Фокус</p>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Первый дедлайн: войти в ритм</h2>
+            <div class="card__content">
+              <p class="card__text">
+                Когда появились первые ограничения, стало проще: я начал собирать
+                приоритеты и отрезать лишнее.
+              </p>
+              <p class="card__text">
+                Этот этап помог мне перестать суетиться и начать работать ровно.
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button button" type="button" aria-label="Лайк">
+                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
+                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
+                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
+                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                  <g class="heart">
+                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
+                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
+                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                  </g>
+                </svg>
+              </button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image-wrapper">
+            <picture class="card__picture">
+              <source media="(width <= 375px)" srcset="./images/card-03-mobile.png" />
+              <img
+                class="card__image card__image_filter-03"
+                src="./images/card-03.png"
+                alt="Ночной кемпер с ровным нейтральным тоном"
+                loading="lazy"
+              />
+            </picture>
+            <p class="card__label">Режим</p>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Компоненты и сетка: собрать каркас</h2>
+            <div class="card__content">
+              <p class="card__text">
+                На этом шаге я уже видел структуру целиком и мог спокойно разбирать
+                проект на части.
+              </p>
+              <p class="card__text">
+                Появилось ощущение, что всё начинает складываться в понятную систему.
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button button" type="button" aria-label="Лайк">
+                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
+                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
+                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
+                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                  <g class="heart">
+                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
+                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
+                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                  </g>
+                </svg>
+              </button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image-wrapper">
+            <picture class="card__picture">
+              <source media="(width <= 375px)" srcset="./images/card-04-mobile.png" />
+              <img
+                class="card__image card__image_filter-04"
+                src="./images/card-04.png"
+                alt="Ночной кемпер с теплым контрастным оттенком"
+                loading="lazy"
+              />
+            </picture>
+            <p class="card__label">Гибкость</p>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Адаптив: перестроиться под экран</h2>
+            <div class="card__content">
+              <p class="card__text">
+                Здесь стало важно не просто сверстать красиво, а заставить проект
+                жить на разных ширинах без лишних костылей.
+              </p>
+              <p class="card__text">
+                Это был полезный момент, когда верстка наконец начала подстраиваться
+                под среду, а не наоборот.
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button button" type="button" aria-label="Лайк">
+                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
+                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
+                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
+                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                  <g class="heart">
+                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
+                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
+                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                  </g>
+                </svg>
+              </button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image-wrapper">
+            <picture class="card__picture">
+              <source media="(width <= 375px)" srcset="./images/card-05-mobile.png" />
+              <img
+                class="card__image card__image_filter-05"
+                src="./images/card-05.png"
+                alt="Ночной кемпер с более холодным контрастом"
+                loading="lazy"
+              />
+            </picture>
+            <p class="card__label">Цвет</p>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Фильтры: добавить характер</h2>
+            <div class="card__content">
+              <p class="card__text">
+                На этой стадии стало интересно играть не только со структурой, но и с
+                визуальным настроением.
+              </p>
+              <p class="card__text">
+                Я начал смотреть на картинку как на часть истории, а не просто как на
+                декор.
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button button" type="button" aria-label="Лайк">
+                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
+                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
+                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
+                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                  <g class="heart">
+                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
+                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
+                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                  </g>
+                </svg>
+              </button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image-wrapper">
+            <picture class="card__picture">
+              <source media="(width <= 375px)" srcset="./images/card-06-mobile.png" />
+              <img
+                class="card__image card__image_filter-06"
+                src="./images/card-06.png"
+                alt="Ночной кемпер в приглушенной серой палитре"
+                loading="lazy"
+              />
+            </picture>
+            <p class="card__label">Пауза</p>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Модалка: довести детали</h2>
+            <div class="card__content">
+              <p class="card__text">
+                Когда дошел до диалога, стало понятно, что даже маленькое окно требует
+                такого же внимания, как и весь экран.
+              </p>
+              <p class="card__text">
+                Тут я окончательно вспомнил, что аккуратность в мелочах делает работу
+                убедительной.
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button button" type="button" aria-label="Лайк">
+                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
+                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
+                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
+                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                  <g class="heart">
+                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
+                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
+                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                  </g>
+                </svg>
+              </button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image-wrapper">
+            <picture class="card__picture">
+              <source media="(width <= 375px)" srcset="./images/card-07-mobile.png" />
+              <img
+                class="card__image card__image_filter-07"
+                src="./images/card-07.png"
+                alt="Ночной кемпер с чуть смазанным атмосферным кадром"
+                loading="lazy"
+              />
+            </picture>
+            <p class="card__label">Импульс</p>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Анимации: поймать движение</h2>
+            <div class="card__content">
+              <p class="card__text">
+                Самым сложным оказалось не добавить эффект, а сделать его уместным и
+                ровным.
+              </p>
+              <p class="card__text">
+                Именно здесь я начал особенно внимательно относиться к таймингам и
+                микродвижениям.
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button button" type="button" aria-label="Лайк">
+                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
+                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
+                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
+                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                  <g class="heart">
+                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
+                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
+                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                  </g>
+                </svg>
+              </button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image-wrapper">
+            <picture class="card__picture">
+              <source media="(width <= 375px)" srcset="./images/card-08-mobile.png" />
+              <img
+                class="card__image card__image_filter-08"
+                src="./images/card-08.png"
+                alt="Ночной кемпер в финальном насыщенном кадре"
+                loading="lazy"
+              />
+            </picture>
+            <p class="card__label">Итог</p>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Финал: собрать всё вместе</h2>
+            <div class="card__content">
+              <p class="card__text">
+                К концу стало видно, как отдельные решения складываются в цельный
+                проект, а не в набор разрозненных кусочков.
+              </p>
+              <p class="card__text">
+                Для меня это был хороший момент, чтобы оглянуться назад и увидеть
+                прогресс.
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button button" type="button" aria-label="Лайк">
+                <svg class="like-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+                  <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" fill="currentColor" />
+                  <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" fill="currentColor" />
+                  <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" fill="currentColor" />
+                  <path class="sparks" d="M18 5V8M18 28V31M5 18H8M28 18H31M8.5 8.5L10.5 10.5M25.5 25.5L27.5 27.5M8.5 27.5L10.5 25.5M25.5 10.5L27.5 8.5" stroke="currentColor" stroke-linecap="square" />
+                  <g class="heart">
+                    <path class="contour" d="M18 32.5L7.5 22C4.5 19 4.5 14.2 7.5 11.2C10.5 8.2 15.3 8.2 18 11C20.7 8.2 25.5 8.2 28.5 11.2C31.5 14.2 31.5 19 28.5 22L18 32.5Z" />
+                    <path class="main-body" d="M18 30.5L9.1 21.6C6.7 19.2 6.7 15.3 9.1 12.9C11.5 10.5 15.4 10.5 17.8 12.9L18 13.1L18.2 12.9C20.6 10.5 24.5 10.5 26.9 12.9C29.3 15.3 29.3 19.2 26.9 21.6L18 30.5Z" />
+                    <path class="core" d="M18 27.5L11.4 20.9C9.7 19.2 9.7 16.5 11.4 14.8C13.1 13.1 15.8 13.1 17.5 14.8L18 15.3L18.5 14.8C20.2 13.1 22.9 13.1 24.6 14.8C26.3 16.5 26.3 19.2 24.6 20.9L18 27.5Z" />
+                  </g>
+                </svg>
+              </button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <button class="button footer__button" type="button" data-dialog-open>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+    </footer>
+    <dialog class="dialog">
+      <div class="dialog__content">
+        <svg class="dialog__icon button__icon" aria-hidden="true" focusable="false">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="dialog__text">Вставьте диск, чтобы сохранить изменения.</p>
+      </div>
+      <button class="button dialog__button" type="button" data-dialog-close>
+        <span class="button__text">ОК</span>
+      </button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
