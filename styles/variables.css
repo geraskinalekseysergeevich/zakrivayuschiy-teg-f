@@ -1,1 +1,36 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --font-accent: 'PressStart2P', fantasy;
+  --font-weight-body: 400;
+  --font-weight-title: 700;
+  --page-background:
+    repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0 0.125rem,
+      transparent 0.125rem 0.25rem
+    ),
+    repeating-linear-gradient(
+      180deg,
+      #d3d3d3 0 0.125rem,
+      transparent 0.125rem 0.25rem
+    ),
+    linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+  --text-color: #000;
+  --page-background-color: #e7e7e7;
+  --surface-color: #fff;
+  --border-color: #000;
+  --button-text-color: #000;
+  --button-fill-color: #000;
+  --content-width: clamp(20rem, calc(100vw - 1rem), 43.5rem);
+  --header-gap: clamp(0.875rem, 2vw, 1.5rem);
+  --section-gap: 3.125rem;
+  --block-padding: clamp(0.875rem, 2vw, 1.25rem);
+  --card-padding: clamp(0.75rem, 2vw, 1.25rem);
+  --card-label-size: clamp(0.875rem, 1.6vw, 1.125rem);
+  --header-title-size: clamp(3.125rem, 7vw, 4.375rem);
+  --header-logo-size: clamp(0.875rem, 2vw, 1.125rem);
+  --card-title-size: clamp(1.125rem, 2.4vw, 1.375rem);
+  --card-text-size: clamp(1rem, 2vw, 1.125rem);
+  --button-font-size: 0.875rem;
+  --button-border-width: 0.125rem;
+}
