@@ -290,11 +290,53 @@
 }
 
 .footer__button {
-  inline-size: clamp(18rem, 30vw, 23rem);
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding-inline: 15px 20px;
+}
+
+.footer__button .button__icon {
+  inline-size: 1.3125rem;
+  block-size: 1.3125rem;
 }
 
 .dialog {
+  display: none;
+  gap: 1.25rem;
+  inline-size: clamp(20rem, 90vw, 22.5rem);
+  padding: 2rem;
   border: var(--button-border-width) solid var(--border-color);
   background-color: var(--surface-color);
   color: var(--text-color);
+}
+
+.dialog[open] {
+  display: grid;
+}
+
+.dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.dialog__content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.dialog__icon {
+  inline-size: 2rem;
+  block-size: 2rem;
+}
+
+.dialog__text {
+  font-family: var(--font-accent);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.dialog__button {
+  inline-size: 100%;
 }
