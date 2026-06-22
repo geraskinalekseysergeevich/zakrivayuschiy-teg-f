@@ -39,8 +39,11 @@
 .header__inner {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: var(--header-gap);
   padding: var(--block-padding);
+  min-block-size: clamp(17rem, 30vw, 22rem);
   border: var(--button-border-width) solid var(--border-color);
   background-color: var(--surface-color);
 }
@@ -50,15 +53,16 @@
   font-size: var(--header-logo-size);
   line-height: 1;
   text-decoration: none;
-  align-self: center;
+  text-align: center;
 }
 
 .header__title {
   font-family: var(--font-accent);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 0.95;
+  font-size: var(--header-title-size);
+  line-height: 0.9;
   text-transform: uppercase;
-  max-inline-size: 12ch;
+  text-align: center;
+  max-inline-size: none;
 }
 
 .content {
