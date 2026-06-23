@@ -2,4 +2,4 @@
 
 Опубликованная версия сайта:
 
-- https://geraskinalekseysergeevich.github.io/zakrivayuschiy-teg-f/
+- https://geraskinalekseysergeevich.github.io/zakrivayuschiy-teg-f
