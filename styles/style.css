@@ -217,7 +217,7 @@
 }
 
 .button::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-color: var(--button-fill-color);
@@ -417,4 +417,73 @@
 
 .dialog__button {
   inline-size: 100%;
+}
+
+@media (width <= 375px) {
+  .page {
+    gap: 6.25rem;
+    padding-block: 6.25rem;
+  }
+
+  .container {
+    inline-size: 100%;
+  }
+
+  .header__inner {
+    justify-content: center;
+    min-block-size: 20.4375rem;
+    gap: 1.25rem;
+  }
+
+  .header__logo {
+    font-size: 3.0625rem;
+    line-height: 1;
+  }
+
+  .header__title {
+    max-inline-size: 13.125rem;
+    font-size: 0.875rem;
+    line-height: 1;
+  }
+
+  .cards {
+    gap: 3.125rem;
+  }
+
+  .card__title {
+    min-block-size: 3.25rem;
+    padding: 0.5625rem 0.6875rem 0.5rem;
+    font-size: 1.125rem;
+  }
+
+  .card__image {
+    block-size: 23.1875rem;
+  }
+
+  .card__content {
+    gap: 1.5625rem;
+    padding: 1.5625rem 1.5625rem 0;
+  }
+
+  .card__actions {
+    gap: 0.75rem;
+    padding: 1.5625rem 1.5625rem;
+  }
+
+  .card__like-button {
+    min-inline-size: 8.125rem;
+    min-block-size: 2.375rem;
+  }
+
+  .footer__button {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.0625rem 1.25rem 1rem;
+  }
+
+  .footer__button .button__icon {
+    inline-size: 1.75rem;
+    block-size: 1.75rem;
+  }
 }
