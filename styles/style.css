@@ -97,6 +97,38 @@
   object-fit: cover;
 }
 
+.card__image_filter-01 {
+  filter: saturate(1.35) contrast(1.15) hue-rotate(-10deg);
+}
+
+.card__image_filter-02 {
+  filter: grayscale(0.35) contrast(1.25) brightness(0.95);
+}
+
+.card__image_filter-03 {
+  filter: sepia(0.55) saturate(1.4) contrast(1.1);
+}
+
+.card__image_filter-04 {
+  filter: saturate(1.6) hue-rotate(35deg) contrast(1.2);
+}
+
+.card__image_filter-05 {
+  filter: contrast(1.45) brightness(0.9) saturate(1.1);
+}
+
+.card__image_filter-06 {
+  filter: invert(0.08) saturate(1.8) contrast(1.1) hue-rotate(180deg);
+}
+
+.card__image_filter-07 {
+  filter: grayscale(0.15) sepia(0.25) saturate(1.6) contrast(1.3);
+}
+
+.card__image_filter-08 {
+  filter: saturate(2) contrast(1.25) brightness(0.88) hue-rotate(-25deg);
+}
+
 .card__watermark {
   position: absolute;
   inset-block-start: 1.5rem;
