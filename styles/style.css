@@ -83,6 +83,7 @@
 
 .card__image-wrapper {
   position: relative;
+  order: -1;
   border-block-end: var(--button-border-width) solid var(--border-color);
 }
 
@@ -169,10 +170,6 @@
   font-size: var(--card-title-size);
   line-height: 1.1;
   font-variation-settings: "wght" var(--font-weight-title);
-}
-
-.card__image-wrapper {
-  order: -1;
 }
 
 .card__content {
