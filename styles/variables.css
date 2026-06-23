@@ -1,1 +1,40 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --font-accent: 'PressStart2P', fantasy;
+  --font-weight-body: 400;
+  --font-weight-title: 700;
+  --page-background:
+    repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0 0.125rem,
+      transparent 0.125rem 0.25rem
+    ),
+    repeating-linear-gradient(
+      180deg,
+      #d3d3d3 0 0.125rem,
+      transparent 0.125rem 0.25rem
+    ),
+    linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+  --text-color: #000;
+  --page-background-color: #e7e7e7;
+  --surface-color: #fff;
+  --border-color: #000;
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+  --button-text-color: #000;
+  --button-fill-color: #000;
+  --content-width: clamp(20rem, calc(100vw - 1rem), 43.5rem);
+  --header-gap: 0.75rem;
+  --section-gap: 3.125rem;
+  --block-padding: 1rem;
+  --card-padding: 1.25rem;
+  --card-label-size: 0.875rem;
+  --header-title-size: clamp(1rem, 1.8vw, 1.75rem);
+  --header-logo-size: clamp(1.75rem, 3.5vw, 3rem);
+  --card-title-size: 1.125rem;
+  --card-text-size: 1rem;
+  --button-font-size: 0.875rem;
+  --button-border-width: 0.125rem;
+  --card-image-height: 43.75rem;
+  --card-action-gap: 0.75rem;
+}
