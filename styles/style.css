@@ -16,8 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: var(--section-gap);
-  padding-block: clamp(0.625rem, 2vw, 1.25rem);
+  padding-block-start: 6.25rem;
   font-family: var(--font-primary);
   font-variation-settings: "wght" var(--font-weight-body);
   color: var(--text-color);
@@ -34,6 +33,7 @@
 
 .header {
   inline-size: 100%;
+  margin-block-end: 6.25rem;
 }
 
 .header__inner {
@@ -42,8 +42,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--header-gap);
-  padding: var(--block-padding);
-  min-block-size: clamp(17rem, 30vw, 22rem);
+  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) var(--block-padding);
   border: var(--button-border-width) solid var(--border-color);
   background-color: var(--surface-color);
 }
@@ -84,6 +83,7 @@
 .card__image-wrapper {
   position: relative;
   order: -1;
+  border-block-start: var(--button-border-width) solid var(--border-color);
   border-block-end: var(--button-border-width) solid var(--border-color);
 }
 
@@ -94,39 +94,40 @@
 }
 
 .card__image {
-  block-size: var(--card-image-height);
+  min-block-size: 23.1875rem;
+  aspect-ratio: 174 / 175;
   object-fit: cover;
 }
 
-.card__image_filter-01 {
+.card__image_theme-night {
   filter: saturate(1.35) contrast(1.15) hue-rotate(-10deg);
 }
 
-.card__image_filter-02 {
+.card__image_theme-muted {
   filter: grayscale(0.35) contrast(1.25) brightness(0.95);
 }
 
-.card__image_filter-03 {
+.card__image_theme-sepia {
   filter: sepia(0.55) saturate(1.4) contrast(1.1);
 }
 
-.card__image_filter-04 {
+.card__image_theme-neon {
   filter: saturate(1.6) hue-rotate(35deg) contrast(1.2);
 }
 
-.card__image_filter-05 {
+.card__image_theme-contrast {
   filter: contrast(1.45) brightness(0.9) saturate(1.1);
 }
 
-.card__image_filter-06 {
+.card__image_theme-cool {
   filter: invert(0.08) saturate(1.8) contrast(1.1) hue-rotate(180deg);
 }
 
-.card__image_filter-07 {
+.card__image_theme-dreamy {
   filter: grayscale(0.15) sepia(0.25) saturate(1.6) contrast(1.3);
 }
 
-.card__image_filter-08 {
+.card__image_theme-vivid {
   filter: saturate(2) contrast(1.25) brightness(0.88) hue-rotate(-25deg);
 }
 
@@ -146,16 +147,17 @@
 @supports ((-webkit-text-stroke: 1px #000) or (text-stroke: 1px #000)) {
   .card__watermark {
     -webkit-text-stroke: 0.0625rem var(--surface-color);
+    text-stroke: 0.0625rem var(--surface-color);
   }
 }
 
 @supports not ((-webkit-text-stroke: 1px #000) or (text-stroke: 1px #000)) {
   .card__watermark {
     text-shadow:
-      0.0625rem 0 0 var(--surface-color),
-      -0.0625rem 0 0 var(--surface-color),
-      0 0.0625rem 0 var(--surface-color),
-      0 -0.0625rem 0 var(--surface-color);
+      0.0625rem 0 0 #000,
+      -0.0625rem 0 0 #000,
+      0 0.0625rem 0 #000,
+      0 -0.0625rem 0 #000;
   }
 }
 
@@ -222,10 +224,6 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.card__icon-button.button::before {
-  content: none;
-}
-
 .button:hover::before {
   transform: translateX(0);
 }
@@ -235,7 +233,7 @@
 }
 
 .button:focus-visible {
-  box-shadow: 2px 2px 0 var(--animation-fill-color);
+  box-shadow: 2px 2px 0 #000;
 }
 
 .button__text {
@@ -270,15 +268,15 @@
 }
 
 .card__icon-button {
-  inline-size: 1.6875rem;
-  block-size: 1.5rem;
-  min-inline-size: 0;
-  min-block-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
   padding: 0;
-  border: var(--button-border-width) solid transparent;
+  border: var(--button-border-width) solid var(--surface-color);
   background-color: transparent;
-  overflow: visible;
-  isolation: auto;
+  cursor: pointer;
   transition: border-color 0.3s ease;
 }
 
@@ -289,13 +287,14 @@
 
 .card__icon-button .like-icon {
   display: block;
-  inline-size: 100%;
-  block-size: 100%;
-  transform: scale(1.45);
+  inline-size: 2.4375rem;
+  block-size: 2.4375rem;
+  margin: auto;
 }
 
 .card__icon-button:focus-visible {
-  border-color: var(--animation-fill-color);
+  border-color: var(--border-color);
+  box-shadow: none;
 }
 
 .card__icon-button:focus {
@@ -321,13 +320,13 @@
   transition: opacity 0.3s ease-in 0.3s;
 }
 
-.like-icon:hover .core,
-.like-icon:hover .main-body {
+.card__icon-button:hover .core,
+.card__icon-button:hover .main-body {
   fill: var(--contour-color);
 }
 
-.like-icon:active .core,
-.like-icon:active .main-body {
+.card__icon-button:active .core,
+.card__icon-button:active .main-body {
   fill: var(--animation-fill-color);
 }
 
@@ -354,14 +353,10 @@
   animation: sparks-flash 0.3s ease-in 0.3s;
 }
 
-.footer {
-  inline-size: 100%;
-  padding-block-end: clamp(0.5rem, 2vw, 1.5rem);
-}
-
-.footer__inner {
+.content__action {
   display: flex;
   justify-content: center;
+  padding-block-end: 6.25rem;
 }
 
 .footer__button {
@@ -418,8 +413,7 @@
 
 @media (width <= 375px) {
   .page {
-    gap: 6.25rem;
-    padding-block: 6.25rem;
+    padding-block-start: 6.25rem;
   }
 
   .container {
@@ -428,18 +422,15 @@
 
   .header__inner {
     justify-content: center;
-    min-block-size: 20.4375rem;
     gap: 1.25rem;
   }
 
   .header__logo {
-    font-size: 3.0625rem;
     line-height: 1;
   }
 
   .header__title {
     max-inline-size: 13.125rem;
-    font-size: 0.875rem;
     line-height: 1;
   }
 
@@ -448,13 +439,8 @@
   }
 
   .card__title {
-    min-block-size: 3.25rem;
     padding: 0.5625rem 0.6875rem 0.5rem;
     font-size: 1.125rem;
-  }
-
-  .card__image {
-    block-size: 23.1875rem;
   }
 
   .card__content {
@@ -470,6 +456,16 @@
   .card__like-button {
     min-inline-size: 8.125rem;
     min-block-size: 2.375rem;
+  }
+
+  .card__icon-button {
+    inline-size: 2.375rem;
+    block-size: 2.375rem;
+  }
+
+  .card__icon-button .like-icon {
+    inline-size: 2.0625rem;
+    block-size: 2.0625rem;
   }
 
   .footer__button {
