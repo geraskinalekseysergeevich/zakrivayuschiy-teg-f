@@ -1,19 +1,11 @@
 :root {
-  --font-primary: 'Inter', sans-serif;
-  --font-accent: 'PressStart2P', fantasy;
+  --font-primary: "Inter", sans-serif;
+  --font-accent: "PressStart2P", fantasy;
   --font-weight-body: 410;
   --font-weight-title: 715;
   --page-background:
-    repeating-linear-gradient(
-      90deg,
-      #d3d3d3 0 0.125rem,
-      transparent 0.125rem 0.25rem
-    ),
-    repeating-linear-gradient(
-      180deg,
-      #d3d3d3 0 0.125rem,
-      transparent 0.125rem 0.25rem
-    ),
+    repeating-linear-gradient(90deg, #d3d3d3 0 0.125rem, transparent 0.125rem 0.25rem),
+    repeating-linear-gradient(180deg, #d3d3d3 0 0.125rem, transparent 0.125rem 0.25rem),
     linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
   --text-color: #000;
   --page-background-color: #e7e7e7;
@@ -29,8 +21,8 @@
   --block-padding: 1rem;
   --card-padding: 1.25rem;
   --card-label-size: 0.875rem;
-  --header-title-size: clamp(1rem, 1.8vw, 1.75rem);
-  --header-logo-size: clamp(1.75rem, 3.5vw, 3rem);
+  --header-title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --header-logo-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --card-title-size: 1.125rem;
   --card-text-size: 1rem;
   --button-font-size: 0.875rem;

@@ -433,13 +433,11 @@
   }
 
   .header__logo {
-    font-size: 3.0625rem;
     line-height: 1;
   }
 
   .header__title {
     max-inline-size: 13.125rem;
-    font-size: 0.875rem;
     line-height: 1;
   }
 
