@@ -1,8 +1,8 @@
 :root {
   --font-primary: 'Inter', sans-serif;
   --font-accent: 'PressStart2P', fantasy;
-  --font-weight-body: 400;
-  --font-weight-title: 700;
+  --font-weight-body: 410;
+  --font-weight-title: 715;
   --page-background:
     repeating-linear-gradient(
       90deg,
