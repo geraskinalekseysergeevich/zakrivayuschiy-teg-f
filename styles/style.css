@@ -42,8 +42,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--header-gap);
-  padding: var(--block-padding);
-  min-block-size: clamp(17rem, 30vw, 22rem);
+  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) var(--block-padding);
   border: var(--button-border-width) solid var(--border-color);
   background-color: var(--surface-color);
 }
@@ -424,7 +423,6 @@
 
   .header__inner {
     justify-content: center;
-    min-block-size: 20.4375rem;
     gap: 1.25rem;
   }
 
