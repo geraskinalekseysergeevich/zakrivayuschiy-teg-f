@@ -95,7 +95,8 @@
 }
 
 .card__image {
-  block-size: var(--card-image-height);
+  min-block-size: 23.1875rem;
+  aspect-ratio: 174 / 175;
   object-fit: cover;
 }
 
@@ -224,10 +225,6 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.card__icon-button.button::before {
-  content: none;
-}
-
 .button:hover::before {
   transform: translateX(0);
 }
@@ -272,15 +269,15 @@
 }
 
 .card__icon-button {
-  inline-size: 1.6875rem;
-  block-size: 1.5rem;
-  min-inline-size: 0;
-  min-block-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
   padding: 0;
-  border: var(--button-border-width) solid transparent;
+  border: var(--button-border-width) solid var(--surface-color);
   background-color: transparent;
-  overflow: visible;
-  isolation: auto;
+  cursor: pointer;
   transition: border-color 0.3s ease;
 }
 
@@ -291,13 +288,14 @@
 
 .card__icon-button .like-icon {
   display: block;
-  inline-size: 100%;
-  block-size: 100%;
-  transform: scale(1.45);
+  inline-size: 2.4375rem;
+  block-size: 2.4375rem;
+  margin: auto;
 }
 
 .card__icon-button:focus-visible {
-  border-color: var(--animation-fill-color);
+  border-color: var(--border-color);
+  box-shadow: none;
 }
 
 .card__icon-button:focus {
@@ -323,13 +321,13 @@
   transition: opacity 0.3s ease-in 0.3s;
 }
 
-.like-icon:hover .core,
-.like-icon:hover .main-body {
+.card__icon-button:hover .core,
+.card__icon-button:hover .main-body {
   fill: var(--contour-color);
 }
 
-.like-icon:active .core,
-.like-icon:active .main-body {
+.card__icon-button:active .core,
+.card__icon-button:active .main-body {
   fill: var(--animation-fill-color);
 }
 
@@ -359,7 +357,7 @@
 .content__action {
   display: flex;
   justify-content: center;
-  padding-block-end: clamp(0.5rem, 2vw, 1.5rem);
+  padding-block-end: 6.25rem;
 }
 
 .footer__button {
@@ -448,10 +446,6 @@
     font-size: 1.125rem;
   }
 
-  .card__image {
-    block-size: 23.1875rem;
-  }
-
   .card__content {
     gap: 1.5625rem;
     padding: 1.5625rem 1.5625rem 0;
@@ -465,6 +459,16 @@
   .card__like-button {
     min-inline-size: 8.125rem;
     min-block-size: 2.375rem;
+  }
+
+  .card__icon-button {
+    inline-size: 2.375rem;
+    block-size: 2.375rem;
+  }
+
+  .card__icon-button .like-icon {
+    inline-size: 2.0625rem;
+    block-size: 2.0625rem;
   }
 
   .footer__button {
