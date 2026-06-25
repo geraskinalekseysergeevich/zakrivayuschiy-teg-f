@@ -84,6 +84,7 @@
 .card__image-wrapper {
   position: relative;
   order: -1;
+  border-block-start: var(--button-border-width) solid var(--border-color);
   border-block-end: var(--button-border-width) solid var(--border-color);
 }
 
@@ -98,35 +99,35 @@
   object-fit: cover;
 }
 
-.card__image_filter-01 {
+.card__image_theme-night {
   filter: saturate(1.35) contrast(1.15) hue-rotate(-10deg);
 }
 
-.card__image_filter-02 {
+.card__image_theme-muted {
   filter: grayscale(0.35) contrast(1.25) brightness(0.95);
 }
 
-.card__image_filter-03 {
+.card__image_theme-sepia {
   filter: sepia(0.55) saturate(1.4) contrast(1.1);
 }
 
-.card__image_filter-04 {
+.card__image_theme-neon {
   filter: saturate(1.6) hue-rotate(35deg) contrast(1.2);
 }
 
-.card__image_filter-05 {
+.card__image_theme-contrast {
   filter: contrast(1.45) brightness(0.9) saturate(1.1);
 }
 
-.card__image_filter-06 {
+.card__image_theme-cool {
   filter: invert(0.08) saturate(1.8) contrast(1.1) hue-rotate(180deg);
 }
 
-.card__image_filter-07 {
+.card__image_theme-dreamy {
   filter: grayscale(0.15) sepia(0.25) saturate(1.6) contrast(1.3);
 }
 
-.card__image_filter-08 {
+.card__image_theme-vivid {
   filter: saturate(2) contrast(1.25) brightness(0.88) hue-rotate(-25deg);
 }
 
@@ -146,16 +147,17 @@
 @supports ((-webkit-text-stroke: 1px #000) or (text-stroke: 1px #000)) {
   .card__watermark {
     -webkit-text-stroke: 0.0625rem var(--surface-color);
+    text-stroke: 0.0625rem var(--surface-color);
   }
 }
 
 @supports not ((-webkit-text-stroke: 1px #000) or (text-stroke: 1px #000)) {
   .card__watermark {
     text-shadow:
-      0.0625rem 0 0 var(--surface-color),
-      -0.0625rem 0 0 var(--surface-color),
-      0 0.0625rem 0 var(--surface-color),
-      0 -0.0625rem 0 var(--surface-color);
+      0.0625rem 0 0 #000,
+      -0.0625rem 0 0 #000,
+      0 0.0625rem 0 #000,
+      0 -0.0625rem 0 #000;
   }
 }
 
@@ -235,7 +237,7 @@
 }
 
 .button:focus-visible {
-  box-shadow: 2px 2px 0 var(--animation-fill-color);
+  box-shadow: 2px 2px 0 #000;
 }
 
 .button__text {
@@ -442,7 +444,6 @@
   }
 
   .card__title {
-    min-block-size: 3.25rem;
     padding: 0.5625rem 0.6875rem 0.5rem;
     font-size: 1.125rem;
   }
