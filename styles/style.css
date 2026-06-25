@@ -354,14 +354,10 @@
   animation: sparks-flash 0.3s ease-in 0.3s;
 }
 
-.footer {
-  inline-size: 100%;
-  padding-block-end: clamp(0.5rem, 2vw, 1.5rem);
-}
-
-.footer__inner {
+.content__action {
   display: flex;
   justify-content: center;
+  padding-block-end: clamp(0.5rem, 2vw, 1.5rem);
 }
 
 .footer__button {
