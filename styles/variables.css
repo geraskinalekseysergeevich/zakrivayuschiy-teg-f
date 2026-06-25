@@ -17,7 +17,7 @@
   --button-fill-color: #000;
   --content-width: clamp(20rem, calc(100vw - 1rem), 43.5rem);
   --header-gap: 0.75rem;
-  --section-gap: 3.25rem;
+  --section-gap: 50px;
   --block-padding: 1rem;
   --card-padding: 1.25rem;
   --card-label-size: 0.875rem;

@@ -356,6 +356,7 @@
 .content__action {
   display: flex;
   justify-content: center;
+  padding-block-start: var(--section-gap);
   padding-block-end: 6.25rem;
 }
 
